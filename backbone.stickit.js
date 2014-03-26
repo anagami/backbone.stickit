@@ -376,14 +376,14 @@
     events: ['input', 'change']
   }, {
     selector: 'input',
-    events: ['propertychange', 'input', 'change'],
+    events: ['propertychange', 'input', 'change', 'keyup'],
     update: function($el, val) { $el.val(val); },
     getVal: function($el) {
       return $el.val();
     }
   }, {
     selector: 'textarea',
-    events: ['propertychange', 'input', 'change'],
+    events: ['propertychange', 'input', 'change', 'keyup'],
     update: function($el, val) { $el.val(val); },
     getVal: function($el) { return $el.val(); }
   }, {
